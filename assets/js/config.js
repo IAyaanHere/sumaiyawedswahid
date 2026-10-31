@@ -53,7 +53,7 @@ window.INVITATION_CONFIG = {
     isoDate: "2027-01-07T17:00:00+05:30",
     date: "07th January 2027",
     day: "Thursday",
-    time: "After Asr onwards",
+    time: "",
     timezone: "IST",
   },
 
@@ -92,12 +92,12 @@ window.INVITATION_CONFIG = {
     },
     {
       time: "07:00 PM",
-      title: "Reception & Welcoming Guests",
+      title: "Guest Arrival",
       note: "Samaj Unnati Mandal, Manikpur, Vasai",
     },
     {
       time: "08:00 PM",
-      title: "Dinner & Celebrations",
+      title: "Nikah Dinner",
       note: "A feast shared with love & blessings (7:00 PM – 10:00 PM)",
     },
   ],
@@ -131,7 +131,7 @@ window.INVITATION_CONFIG = {
       mapLink: "https://maps.google.com/?q=Jama+Masjid+Papdy+Vasai+West+Maharashtra",
     },
     {
-      name: "Reception",
+      name: "Nikah Dinner",
       date: "07th January 2027",
       time: "07:00 PM – 10:00 PM",
       location: "Samaj Unnati Mandal, Manikpur, Vasai",
