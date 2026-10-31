@@ -7,24 +7,24 @@
 
 window.INVITATION_CONFIG = {
   site: {
-    title: "Durefishan & Bilal — Nikah Invitation",
-    description: "You are warmly invited to celebrate the Nikah of Durefishan and Bilal Abbas.",
+    title: "Sumaiya with Wahid — Nikah Invitation",
+    description: "You are warmly invited to celebrate the Nikah of Sumaiya Siddiqui with Wahid Patel.",
   },
 
   couple: {
-    brideInitial: "D",
-    groomInitial: "B",
+    brideInitial: "S",
+    groomInitial: "W",
     bride: {
-      name: "Durefishan Saleem",
-      shortName: "Durefishan",
-      relation: "Daughter of",
-      parents: "Saleem",
+      name: "Sumaiya Siddiqui",
+      shortName: "Sumaiya",
+      relation: "D/o",
+      parents: "Late. Mr Nasir Siddiqui & Mrs Fatima Siddiqui",
     },
     groom: {
-      name: "Bilal Abbas",
-      shortName: "Bilal",
-      relation: "Son of",
-      parents: "Abbas",
+      name: "Wahid Patel",
+      shortName: "Wahid",
+      relation: "S/o",
+      parents: "Mr. Fareed Patel & Mrs. Nasreen Patel",
     },
   },
 
@@ -50,10 +50,10 @@ window.INVITATION_CONFIG = {
 
   wedding: {
     // Use a valid ISO date with the local UTC offset for an accurate countdown.
-    isoDate: "2026-10-18T19:00:00+05:30",
-    date: "October 18, 2026",
-    day: "Sunday",
-    time: "07:00 PM",
+    isoDate: "2027-01-07T17:00:00+05:30",
+    date: "07th January 2027",
+    day: "Thursday",
+    time: "After Asr onwards",
     timezone: "IST",
   },
 
@@ -62,7 +62,7 @@ window.INVITATION_CONFIG = {
     introVideo: "./media/intro-placeholder.mp4",
     introPoster:
       "./media/intro-placeholder.webp",
-    music: "./bismillah.mp3",
+    music: "./shukran-laka-rabbi.mp3",
 
     // Replace gallery URLs with your own hosted files or image URLs.
     gallery: [
@@ -86,74 +86,62 @@ window.INVITATION_CONFIG = {
 
   program: [
     {
-      time: "6:30 PM",
-      title: "Guest Arrival",
-      note: "",
+      time: "After Asr",
+      title: "Nikah Ceremony",
+      note: "Jama Masjid, Papdy, Vasai",
     },
     {
       time: "07:00 PM",
-      title: "Nikah Ceremony",
-      note: "Solemnisation & duas",
-    },
-    {
-      time: "07:30 PM",
-      title: "Blessings",
-      note: "Family greetings & photographs",
+      title: "Reception & Welcoming Guests",
+      note: "Samaj Unnati Mandal, Manikpur, Vasai",
     },
     {
       time: "08:00 PM",
-      title: "Dinner",
-      note: "A feast shared with love",
+      title: "Dinner & Celebrations",
+      note: "A feast shared with love & blessings (7:00 PM – 10:00 PM)",
     },
   ],
 
   venue: {
-    name: "Noor Invites",
+    name: "Samaj Unnati Mandal",
     address:
-      "Lahore, Pakistan",
-    mapUrl: "https://maps.app.goo.gl/9SjDC3RRg9jHZty59",
+      "Manikpur, Vasai West, Maharashtra",
+    mapUrl: "https://maps.google.com/?q=Samaj+Unnati+Mandal+Sabha+Gruha+Manikpur+Vasai+West",
   },
 
-dressCode: {
-  title: "Festive Formal",
-  description:
-    "Traditional or formal attire is encouraged. Sarees, lehengas, anarkalis, sherwanis, kurtas, suits, and formal dresses are all welcome. We kindly ask guests to avoid overly casual attire and white or ivory.",
-  swatches: [
-    "#7A1F2B",
-    "#234638",
-    "#C49A56",
-    "#7A4968",
-    "#31506B",
-  ],
-},
+  dressCode: {
+    title: "Festive Formal",
+    description:
+      "Traditional or formal attire is encouraged. Sarees, lehengas, anarkalis, sherwanis, kurtas, suits, and formal dresses are all welcome. We kindly ask guests to avoid overly casual attire and white or ivory.",
+    swatches: [
+      "#7A1F2B",
+      "#234638",
+      "#C49A56",
+      "#7A4968",
+      "#31506B",
+    ],
+  },
 
   preWeddingEvents: [
     {
-      name: "Mehendi",
-      date: "October 15",
-      time: "4:00 PM",
-      location: "Bride’s Residence",
-      mapLink: "https://maps.app.goo.gl/c4WZJk71NhKc7CDGA",
+      name: "Nikah",
+      date: "07th January 2027",
+      time: "After Namaz-e-Asr",
+      location: "Jama Masjid, Papdy, Vasai",
+      mapLink: "https://maps.google.com/?q=Jama+Masjid+Papdy+Vasai+West+Maharashtra",
     },
     {
-      name: "Qawwali Evening",
-      date: "October 17",
-      time: "7:00 PM",
-      location: "Groom's Residence",
-      mapLink: "https://maps.app.goo.gl/c4WZJk71NhKc7CDGA",
-    },
-    {
-      name: "Walima",
-      date: "October 19",
-      time: "7:30 PM",
-      location: "Lahore, Pakistan",
-      mapLink: "https://maps.app.goo.gl/VY3FM2kntM26syuJ8",
+      name: "Reception",
+      date: "07th January 2027",
+      time: "07:00 PM – 10:00 PM",
+      location: "Samaj Unnati Mandal, Manikpur, Vasai",
+      mapLink: "https://maps.google.com/?q=Samaj+Unnati+Mandal+Sabha+Gruha+Manikpur+Vasai+West",
     },
   ],
 
   rsvp: {
-    deadline: "Kindly respond by September 15, 2026",
-    contact: "For assistance, call +91 98765 43210",
+    deadline: "Kindly respond by December 25, 2026",
+    contact: "For assistance, please contact the family",
     fields: {
       name: "Your full name",
       email: "Email address",
@@ -163,12 +151,12 @@ dressCode: {
     },
   },
 
-theme: {
-  ivory: "#F7EFE2",       /* warm bridal ivory */
-  plum: "#5A4035",        /* deep warm cocoa */
-  lavender: "#D8B7A6",    /* muted blush nude */
-  mauve: "#B97D6D",       /* dusty rose */
-  lilac: "#A8A28A",       /* soft sage taupe */
-  champagne: "#B88A45",   /* antique gold */
-},
+  theme: {
+    ivory: "#F7EFE2",       /* warm bridal ivory */
+    plum: "#5A4035",        /* deep warm cocoa */
+    lavender: "#D8B7A6",    /* muted blush nude */
+    mauve: "#B97D6D",       /* dusty rose */
+    lilac: "#A8A28A",       /* soft sage taupe */
+    champagne: "#B88A45",   /* antique gold */
+  },
 };

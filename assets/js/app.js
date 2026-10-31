@@ -56,7 +56,7 @@ document.addEventListener("dragstart", (event) => {
     element.replaceChildren(
       document.createTextNode(brideName),
       document.createTextNode(" "),
-      createElement("span", "", "&"),
+      createElement("span", "", "with"),
       document.createTextNode(" "),
       document.createTextNode(groomName)
     );
