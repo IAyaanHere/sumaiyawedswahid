@@ -25,7 +25,7 @@ window.INVITATION_CONFIG = {
       name: "Wahid Patel",
       shortName: "Wahid",
       relation: "S/o",
-      parents: "Mr. Fareed Patel & Mrs. Nasreen Patel",
+      parents: "Mr. Farid Patel & Mrs. Nasrin Patel",
     },
   },
 
