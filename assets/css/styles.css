@@ -451,8 +451,11 @@ main {
 }
 
 .hero-divider span {
-  font-size: .62rem;
-  color: var(--champagne);
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background: var(--champagne);
+  transform: rotate(45deg);
 }
 
 .hero-welcome {
@@ -2312,7 +2315,11 @@ textarea:focus-visible {
 }
 
 .venue-divider span {
-  font-size: .65rem;
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background: var(--champagne);
+  transform: rotate(45deg);
 }
 
 /* Venue name */
@@ -2795,9 +2802,11 @@ textarea:focus-visible {
 }
 
 .footer-branding .footer-divider span {
-  color: var(--champagne);
-  font-size: 0.85rem;
-  line-height: 1;
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background: var(--champagne);
+  transform: rotate(45deg);
 }
 
 .create-yours-btn {

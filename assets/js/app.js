@@ -172,6 +172,7 @@ function renderPreWeddingEvents() {
 
   function renderDressPalette() {
     const palette = select("#dressPalette");
+    if (!palette || !config.dressCode?.swatches) return;
 
     config.dressCode.swatches.forEach((color, index) => {
       const swatch = createElement("i");
