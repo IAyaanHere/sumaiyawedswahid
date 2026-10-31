@@ -2762,5 +2762,103 @@ textarea:focus-visible {
 
 .naqsh-demo-badge {
     display: none;
-    
+}
+
+/* ==================== FOOTER BRANDING & CREATE YOURS ==================== */
+
+.footer-branding {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 36px;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+.footer-branding .footer-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
+  max-width: 180px;
+  margin-bottom: 24px;
+}
+
+.footer-branding .footer-divider::before,
+.footer-branding .footer-divider::after {
+  content: "";
+  height: 1px;
+  flex: 1;
+  background: color-mix(in srgb, var(--champagne) 40%, transparent);
+}
+
+.footer-branding .footer-divider span {
+  color: var(--champagne);
+  font-size: 0.85rem;
+  line-height: 1;
+}
+
+.create-yours-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 13px 30px;
+  background: var(--plum);
+  color: var(--ivory) !important;
+  border: 1px solid var(--champagne);
+  border-radius: 999px;
+  font-family: var(--font-body);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  text-decoration: none !important;
+  box-shadow: 0 4px 18px rgba(90, 64, 53, 0.15);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  cursor: pointer;
+}
+
+.create-yours-btn:hover {
+  background: var(--champagne);
+  color: var(--plum) !important;
+  border-color: var(--plum);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(184, 138, 69, 0.32);
+}
+
+.create-yours-btn .instagram-icon {
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.create-yours-btn:hover .instagram-icon {
+  transform: scale(1.12);
+}
+
+.designed-by {
+  margin-top: 18px;
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  color: var(--plum);
+  opacity: 0.88;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.designed-by a {
+  color: var(--champagne) !important;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s ease, text-decoration 0.2s ease;
+}
+
+.designed-by a:hover {
+  color: var(--plum) !important;
+  text-decoration: underline;
 }
