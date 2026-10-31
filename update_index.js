@@ -2,19 +2,23 @@ const fs = require('fs');
 
 let html = fs.readFileSync('index.html', 'utf8');
 
-// 1. Fix date-kicker to clean standard ASCII (You Are Invited!)
-html = html.replace(/<span class="date-kicker">.*?<\/span>/, '<span class="date-kicker">You Are Invited!</span>');
+const metaTags = `<title>Sumaiya with Wahid — Nikah Invitation</title>
+<meta content="You are warmly invited to celebrate the Nikah of Sumaiya Siddiqui with Wahid Patel." name="description"/>
+<meta content="Sumaiya with Wahid — Nikah Invitation" property="og:title"/>
+<meta content="You are warmly invited to celebrate the Nikah of Sumaiya Siddiqui with Wahid Patel." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta property="og:image" content="./og-image.jpg"/>
+<meta property="og:image:secure_url" content="./og-image.jpg"/>
+<meta property="og:image:type" content="image/jpeg"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Sumaiya with Wahid — Nikah Invitation"/>
+<meta name="twitter:description" content="You are warmly invited to celebrate the Nikah of Sumaiya Siddiqui with Wahid Patel."/>
+<meta name="twitter:image" content="./og-image.jpg"/>`;
 
-// 2. Fix hero-divider, venue-divider, and footer-divider spans so CSS renders pure geometric diamond
-html = html.replace(/<div class="hero-divider">\s*<span>.*?<\/span>\s*<\/div>/, '<div class="hero-divider"><span></span></div>');
-html = html.replace(/<div aria-hidden="true" class="venue-divider">\s*<span>.*?<\/span>\s*<\/div>/, '<div aria-hidden="true" class="venue-divider">\n<span></span>\n</div>');
-html = html.replace(/<div class="footer-divider">\s*<span>.*?<\/span>\s*<\/div>/, '<div class="footer-divider"><span></span></div>');
-
-// 3. Remove Dress code section and adjacent floral divider
 html = html.replace(
-  /<!-- Dress code -->\s*<section class="dress-section[\s\S]*?<\/section>\s*<div aria-hidden="true" class="floral-divider">\s*<img alt="" src="assets\/images\/floral-divider\.webp"\/>\s*<\/div>/,
-  ''
+  /<title>Sumaiya with Wahid — Nikah Invitation<\/title>[\s\S]*?<meta content="website" property="og:type"\/>/,
+  metaTags
 );
 
 fs.writeFileSync('index.html', html, 'utf8');
-console.log('Successfully updated index.html');
+console.log('Successfully added og:image meta tags to index.html');

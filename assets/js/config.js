@@ -9,6 +9,7 @@ window.INVITATION_CONFIG = {
   site: {
     title: "Sumaiya with Wahid — Nikah Invitation",
     description: "You are warmly invited to celebrate the Nikah of Sumaiya Siddiqui with Wahid Patel.",
+    image: "./og-image.jpg",
   },
 
   couple: {
